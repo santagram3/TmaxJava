@@ -6,9 +6,14 @@ public class Testmain {
 		
 		TestDTO t1 = new TestDTO();
 		
-		System.out.println(t1.get);
-
+		// System.out.println(t1.getS1());
+		System.out.println(t1.getS1());
+		System.out.println(t1.getS2());
+		
+		
 		TestDTO2 t2 = new TestDTO2();
+		
+		
 		
 		System.out.println(t2.getP1());
 		System.out.println(t2.getP2());

@@ -9,7 +9,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class BoardSelectExample {
+public class BoardSelectExample2 {
 	public static void main(String[] args) {
 		Connection conn=null;
 		 try {
@@ -24,14 +24,14 @@ public class BoardSelectExample {
 			  
 			//3. sql문작성 dbms에 전달
 			  String sql="select bno, btitle,bcontent,bwriter,bdate, "
-			  		   + " bfilename,bfiledata from boards where bwriter=?";
+			  		   + " bfilename,bfiledata from boards where bno=?";
 			  System.out.println(sql);
 			//3-2. 쿼리문 전달객체 생성
 			 PreparedStatement pstmt = conn.prepareStatement(sql);
 			 
 			 //값 세팅
 			 //3-2-1.
-			   pstmt.setString(1, "winter");			  
+			   pstmt.setInt(1, 3);			  
 			   
 			//3-3. 쿼리문 전달 및 실행 
 			 ResultSet rs =pstmt.executeQuery();
@@ -62,7 +62,6 @@ public class BoardSelectExample {
 			 rs.close();
 			 pstmt.close();
 		 }catch(Exception e) {
-			 System.out.println("=========");
 			 System.out.println(e.getMessage());
 		 }finally {
 			 try {

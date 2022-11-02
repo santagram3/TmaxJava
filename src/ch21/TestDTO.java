@@ -13,9 +13,9 @@ import lombok.ToString;
 @NoArgsConstructor // 기본생성자 
 public class TestDTO {
 	
-	private String s1;
-	private String s2;
-	private String s3;
+	private String s1="12";
+	private String s2="33";
+	private String s3="s3";
 	
 	
 	

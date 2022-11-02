@@ -13,7 +13,6 @@ public class BoardWithFileInserExample {
 		Connection conn = null;
 	
 		try {
-			
 			 //1-1.드라이버로딩
 			 Class.forName("oracle.jdbc.driver.OracleDriver");
 			  //2.연결객체 인스턴스 생성

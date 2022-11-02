@@ -2,9 +2,9 @@ package ch21;
 
 public class TestDTO2 {
 	
-	private String p1;
-	private String p2;
-	private String p3;
+	private String p1="p1";
+	private String p2="p2";
+	private String p3="p3";
 	public String getP1() {
 		return p1;
 	}
